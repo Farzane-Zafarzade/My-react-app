@@ -1,0 +1,19 @@
+.profile__wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 200px;
+    justify-content: space-around;
+  }
+  
+  .profile__username {
+    align-self: center;
+  }
+  
+  .profile__wrapper:hover {
+    display: flex;
+  }
+
+  
+  
