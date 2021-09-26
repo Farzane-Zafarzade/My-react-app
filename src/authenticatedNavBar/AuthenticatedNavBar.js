@@ -14,9 +14,9 @@ export const AuthenticatedNavBar = () => {
     }
 
     return (
-        <div className="profile__wrapper">
+        <div className="wrapper">
             
-            <span className="profile__username"> Hello {authenticatedUser} !</span>
+            <span className="username"> Hello {authenticatedUser} !</span>
             <a className="signin" onClick={() => logout()}>Log Out</a>
                
         </div>

@@ -1,4 +1,4 @@
-.profile__wrapper {
+.wrapper {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -7,11 +7,11 @@
     justify-content: space-around;
   }
   
-  .profile__username {
+  .username {
     align-self: center;
   }
   
-  .profile__wrapper:hover {
+  .wrapper:hover {
     display: flex;
   }
 

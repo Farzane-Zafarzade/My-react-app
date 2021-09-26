@@ -7,7 +7,7 @@ const Loan = ({loan,onDelete,onToggle}) => {
          onDoubleClick={()=>onToggle(loan.id)}>
             <h3>{loan.text}<FaTrash onClick={()=>onDelete(loan.id)} 
             style={{color:"blue"}}/></h3>
-            <p>{loan.day}<br/>({loan.paid?"paid":"Dubble click to change status to paid"})</p>
+            <p>{loan.describtion}<br/>({loan.paid?"paid":"Dubble click to change status to paid"})</p>
         </div>
     )
 }

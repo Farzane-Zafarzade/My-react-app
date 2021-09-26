@@ -28,21 +28,21 @@ export const LoansView = () =>{
     const [loans,setLoans]= useState([
       {
           id: 1,
-          text: "Pizza",
-          day: "8 march",
+          text: "David",
+          describtion: "(-100Kr) 8 March - Pizza",
           paid: true,
       },
       {
           id: 2,
-          text: "Cinema",
-          day: "10 march",
-          paid: true,
+          text: "Sara",
+          describtion: "(-150Kr) 2 March - Shopping",
+          paid: false,
       },
       {
           id: 3,
-          text: "Coffe",
-          day: "9 march",
-          paid: false,
+          text: "Leeda",
+          describtion: "(60Kr) 21 May - Coffee",
+          paid: true,
       },
   ]) 
   

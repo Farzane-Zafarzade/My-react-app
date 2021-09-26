@@ -3,13 +3,14 @@ import { useHistory } from 'react-router-dom';
 import RoutingPath from '../routes/RoutingPath';
 import Logo from '../shared/img/Logo.svg';
 import { UserContext } from '../shared/global/provider/UserProvider';
+import CurrencyConver from '../components/currency/CurrencyConver';
 
 
 export const HomeView = () =>{
   const history = useHistory();
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
     return (
-      <div className="container">
+      <main className="container">
         <div> <img className="logo-singin" src={Logo} alt="Pay me logo"/> </div>
         <div className="home-heading">
           <span> Welcome to <span style={{color:"blue", fontFamily:"fantasy"}}>Pay me!</span></span>
@@ -19,8 +20,10 @@ export const HomeView = () =>{
            <p>Click on the log in button to start</p>
           </div>
          <button className="btn btn-block" onClick={() =>(authenticatedUser) ? history.push(RoutingPath.loansView) : history.push(RoutingPath.signInView)}>LOG IN</button>
-        
-      </div>
+        <div className="convert-box">
+        <CurrencyConver/>
+        </div>
+      </main>
     );
   }
 
