@@ -6,43 +6,40 @@
   position: relative;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  }
-  
-  .logo {
-    max-width: unset;
-    height: 4rem;
-    cursor: pointer;
-  }
-  
-  .authenticatedUserNavBar {
-    grid-column: 9;
-    align-self: center;
-  }
-  
-  .signin {
-    grid-column: 10;
-    align-self: center;
-    text-align: center;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .logo-singin {
-    max-width: unset;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 9rem;
-    padding-bottom: 35px;
-     }
+}
 
-     .pay-me{
-      grid-column: 2;
-      align-self: center;
-      text-align: center;
-      text-decoration: underline;
-      cursor: pointer;
+.logo {
+  max-width: unset;
+  height: 4rem;
+  cursor: pointer;
+}
 
-     }
+.authenticatedUserNavBar {
+  grid-column: 9;
+  align-self: center;
+}
 
-     
+.signin {
+  grid-column: 10;
+  align-self: center;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo-singin {
+  max-width: unset;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 9rem;
+  padding-bottom: 35px;
+}
+
+.pay-me {
+  grid-column: 2;
+  align-self: center;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
