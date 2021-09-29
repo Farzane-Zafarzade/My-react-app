@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import RoutingPath from '../routes/RoutingPath';
 import Logo from '../shared/img/Logo.svg';
@@ -10,12 +10,11 @@ export const HomeView = () => {
   
   const history = useHistory();
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
-  const location = useLocation();
+  
 
 
   return (
     <main className="container">
-      <h2 style={{paddingBottom:"2rem"}}> {location.state.param} </h2>
       <div> <img className="logo-singin" src={Logo} alt="Pay me logo" /> </div>
       <div className="home-heading">
         <span> Welcome to <span style={{ color: "blue", fontFamily: "fantasy" }}>Pay me!</span></span>
