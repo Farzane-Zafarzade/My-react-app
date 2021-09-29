@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { useHistory } from 'react-router-dom';
+import RoutingPath from '../routes/RoutingPath';
 import { UserContext } from '../shared/global/provider/UserProvider';
 import "./AuthenticatedNavBar.css"
 
@@ -10,7 +11,7 @@ export const AuthenticatedNavBar = () => {
     const logout = () => {
         localStorage.removeItem("username")
         setAuthenticatedUser(false)
-        history.push('/')
+        history.push(RoutingPath.homeView,{param:'Welcome to home page'})
     }
 
     return (

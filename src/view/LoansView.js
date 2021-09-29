@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../components/loan/Header';
 import Loans from '../components/loan/Loans';
 import AddLoan from '../components/loan/AddLoan';
+import { useLocation } from 'react-router-dom';
 
 export const LoansView = () => {
+  const location = useLocation();
+  
   const [showAddForm, setshowAddForm] = useState(false);
 
   //Deletes loan
@@ -48,6 +51,7 @@ export const LoansView = () => {
 
   return (
     <div className="container">
+      <h2> {location.state.param} </h2>
       <Header showAddForm={showAddForm} onAdd={() => setshowAddForm(!showAddForm)}
       />
       {showAddForm && <AddLoan onAdd={addLoan} />}
