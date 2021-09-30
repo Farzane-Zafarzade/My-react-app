@@ -51,7 +51,7 @@ export const LoansView = () => {
 
   return (
     <div className="container">
-      <h2> {location.state.param} </h2>
+      <h2> {location?.state?.param} </h2>
       <Header showAddForm={showAddForm} onAdd={() => setshowAddForm(!showAddForm)}
       />
       {showAddForm && <AddLoan onAdd={addLoan} />}

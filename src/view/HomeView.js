@@ -10,11 +10,13 @@ export const HomeView = () => {
   
   const history = useHistory();
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+  const location= useLocation();
   
 
 
   return (
     <main className="container">
+      <h2>{location?.satate?.param}</h2>
       <div> <img className="logo-singin" src={Logo} alt="Pay me logo" /> </div>
       <div className="home-heading">
         <span> Welcome to <span style={{ color: "blue", fontFamily: "fantasy" }}>Pay me!</span></span>

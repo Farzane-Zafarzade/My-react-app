@@ -21,7 +21,7 @@ export const SignInView = () => {
 
     return (
         <form className="container">
-            <h2> {location.state.param} </h2>
+            <h2> {location?.state?.param} </h2>
             <div className="form-control">
                 <div> <img className="logo-singin" src={LogoSignin}/> </div>
                 <div className="signin-text"> This is a demo App!<br /> Enter any username and password and log in.</div>

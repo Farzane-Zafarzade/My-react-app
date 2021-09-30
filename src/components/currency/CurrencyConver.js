@@ -3,7 +3,7 @@ import './CurrencyConver.css'
 import CurrencyRow from './CurrencyRows';
 
 function CurrencyConver() {
-    const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=cb867ffac0865b3d12d004026ed63e33';
+    const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=70a3edd5617ecc15a9b0843de249b89d';
     const [currencyOptions, setCurrencyOptions] = useState([])
   const [fromCurrency, setFromCurrency] = useState()
   const [toCurrency, setToCurrency] = useState()
